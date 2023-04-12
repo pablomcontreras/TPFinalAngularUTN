@@ -7,13 +7,13 @@ import { PeliculasService } from '../peliculas.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-tendencias:any = []
+tendencias:any[] = []
 
   constructor(private peliculasService: PeliculasService) {
 
     const response = peliculasService.getFeatured().subscribe({
       next: (data:any) => {
-        this.tendencias = data.results
+        this.tendencias = data.results.slice(0,10)
       console.log(this.tendencias)},
       error: (e) => {console.log("Error: ", e);}
     })

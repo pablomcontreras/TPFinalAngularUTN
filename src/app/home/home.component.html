@@ -1,7 +1,8 @@
-<p>home works!</p>
+<h1>Bienvenido!</h1>
+<h2>Estas son las tendencias de esta semana</h2>
 
 <div *ngFor="let pelicula of tendencias">
-    <p>{{pelicula.title}}</p>
-    <img src="{{'https://image.tmdb.org/t/p/w154'+pelicula.poster_path}}"/>
+    <h4>{{pelicula.title}}</h4>
+    <img src="{{pelicula.poster_path | poster}}"/>
 
 </div>

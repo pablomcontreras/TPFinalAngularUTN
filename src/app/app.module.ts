@@ -16,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
+import { PosterPipe } from './poster.pipe';
 
 
 
@@ -28,6 +29,7 @@ import { MenuComponent } from './menu/menu.component';
     LoginComponent,
     DetalleComponent,
     MenuComponent,
+    PosterPipe,
   ],
   imports: [
     BrowserModule,
