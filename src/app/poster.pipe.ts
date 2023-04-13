@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class PosterPipe implements PipeTransform {
 
   transform(value: unknown, ...args: unknown[]): unknown {
-    return `https://image.tmdb.org/t/p/w154${value}`;
+    return `https://image.tmdb.org/t/p/w300${value}`;
   }
 
 }

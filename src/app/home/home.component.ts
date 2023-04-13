@@ -13,13 +13,15 @@ tendencias:any[] = []
 
     const response = peliculasService.getFeatured().subscribe({
       next: (data:any) => {
-        this.tendencias = data.results.slice(0,10)
+        this.tendencias = data.results.slice(0,9)
       console.log(this.tendencias)},
       error: (e) => {console.log("Error: ", e);}
     })
    }
 
- 
+  verDetalle(peli:string) {
+   alert('se hizo click en la peli '+ peli)
+ }
   
 
 

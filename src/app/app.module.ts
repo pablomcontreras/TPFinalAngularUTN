@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import { PosterPipe } from './poster.pipe';
+import { OverviewPipe } from './overview.pipe';
 
 
 
@@ -30,6 +31,7 @@ import { PosterPipe } from './poster.pipe';
     DetalleComponent,
     MenuComponent,
     PosterPipe,
+    OverviewPipe,
   ],
   imports: [
     BrowserModule,

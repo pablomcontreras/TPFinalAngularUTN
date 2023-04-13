@@ -1,8 +1,19 @@
+<div class="p-4">
 <h1>Bienvenido!</h1>
 <h2>Estas son las tendencias de esta semana</h2>
 
-<div *ngFor="let pelicula of tendencias">
-    <h4>{{pelicula.title}}</h4>
-    <img src="{{pelicula.poster_path | poster}}"/>
-
+<div class="row row-cols-1 row-cols-md-3 g-4" >
+    <div class="col"  *ngFor="let pelicula of tendencias">
+        <div class="card h-100 " role='button' (click)="verDetalle(pelicula.title)">
+            <img src="{{pelicula.poster_path | poster}}" class="h-100"
+                alt="Hollywood Sign on The Hill" />
+            <div class="card-body">
+                <h5 class="card-title">{{pelicula.title}}</h5>
+                <p class="card-text">
+                {{pelicula.overview  | overview}}
+            </div>
+        </div>
+    </div>
+    
+</div>
 </div>
