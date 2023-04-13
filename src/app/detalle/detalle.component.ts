@@ -9,12 +9,13 @@ import { PeliculasService } from '../peliculas.service';
 })
 export class DetalleComponent implements OnInit {
   id_peli: any;
-  pelicula: any = "";
+  pelicula: any = { } ;
 
   constructor(
     private rutaActiva: ActivatedRoute,
     private peliculasService: PeliculasService
-  ) {}
+  ) { }
+  
 
   ngOnInit() {
     this.id_peli = this.rutaActiva.snapshot.params;
@@ -24,6 +25,7 @@ export class DetalleComponent implements OnInit {
     this.peliculasService.getById(this.id_peli.id).subscribe({
       next: (data: any) => {
         this.pelicula = data;
+        console.log(data);
       },
       error: (e) => {
       },

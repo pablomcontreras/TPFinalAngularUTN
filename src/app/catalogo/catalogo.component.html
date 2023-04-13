@@ -1,1 +1,14 @@
 <p>catalogo works!</p>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let genero of generos">
+        <div class="card h-100 " role='button' >
+            <img src="" class="h-100" alt="Hollywood Sign on The Hill" />
+            <div class="card-body">
+                <h5 class="card-title">{{genero.name}}</h5>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
