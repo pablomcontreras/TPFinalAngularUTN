@@ -27,7 +27,6 @@ export class DetalleComponent implements OnInit {
     this.peliculasService.getById(this.id_peli.id).subscribe({
       next: (data: any) => {
         this.pelicula = data;
-        console.log(data);
       },
       error: (e) => {
       },

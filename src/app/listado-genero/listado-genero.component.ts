@@ -8,22 +8,20 @@ import { PeliculasService } from '../peliculas.service';
   styleUrls: ['./listado-genero.component.css'],
 })
 export class ListadoGeneroComponent implements OnInit {
-
   genero: any;
-  peliculasDelGenero: any
-  
+  peliculasDelGenero: any;
 
   constructor(
-    private rutaActiva: ActivatedRoute,
+    private route: ActivatedRoute,
     private peliculasService: PeliculasService
   ) {}
 
   ngOnInit() {
-    this.genero = this.rutaActiva.snapshot.params;
-    console.log(this.genero.genero)
-    this.rutaActiva.params.subscribe((params) => {
+    this.genero = this.route.snapshot.params;
+    this.route.params.subscribe((params) => {
       this.genero = params;
     });
+
     this.peliculasService.getByGenre(this.genero.genero).subscribe({
       next: (data: any) => {
         this.peliculasDelGenero = data.results;

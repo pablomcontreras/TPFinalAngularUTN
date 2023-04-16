@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class PeliculasService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getGeneros() {
     return this.http.get(
@@ -32,8 +32,6 @@ export class PeliculasService {
   }
 
   getByGenre(genero: string) {
-    console.log("Se llamo a GetByGenre con el parametro id: ", genero);
-    return this.http.get(
-"https://api.themoviedb.org/3/discover/movie?api_key=343b1af65aa49d4ebb8e0c3d95e57588&with_genres=27&language=es-MX"    );
+    return this.http.get(`https://api.themoviedb.org/3/discover/movie?api_key=343b1af65aa49d4ebb8e0c3d95e57588&with_genres=${genero}&language=es-MX`)
   }
 }
