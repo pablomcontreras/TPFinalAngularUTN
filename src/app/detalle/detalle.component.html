@@ -1,3 +1,57 @@
-<h1>{{pelicula.title}}</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1> Detalle de la película </h1>
+            <h3 class="centre">{{pelicula.title}}</h3>
+        </div>
+    </div>
+    <div class="row m-5">
+        <div class="col-md-6">
+            <img class="d-block m-auto" alt="{{pelicula.title}}" src="{{pelicula.poster_path | poster}}" />
+        </div>
+        <div class="col-md-6">
+            <dl>
+                <dt>
+                    Sinópsis
+                </dt>
+                <dd>
+                    {{pelicula.overview}} </dd>
+                <dt>
+                    Fecha de Lanzamiento:
+                </dt>
+                <dd>
+                    {{pelicula.release_date | date: 'dd/MM/yyyy'}} </dd>
 
-<p>Pelicula Seleccionada:   {{pelicula.title}}</p>
+                <dt>
+                    Duración: </dt>
+                <dd>
+                    {{pelicula.runtime}} minutos. </dd>
+                <dt>
+                    Puntuación: </dt>
+                <dd>
+                    {{pelicula.vote_average | number :'1.0-2' }}/10 <span class="small">({{pelicula.vote_count}}
+                        votos)</span>
+                </dd>
+            </dl>
+            <div class="row-cols-2 mx-auto ">
+          <div class="col-md-6">
+            <button type="button" class="btn btn-success mr-3" routerLink="/">
+                Volver
+            </button>
+            </div>
+            <div class="col-md-6">
+            <button type="button" class="btn btn-warning" (click)="verIMDB()">
+                Ir a IMDB
+            </button>
+            </div>
+            
+</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+
+
+        </div>
+    </div>
+</div>

@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import { PosterPipe } from './poster.pipe';
 import { OverviewPipe } from './overview.pipe';
+import { ListadoGeneroComponent } from './listado-genero/listado-genero.component';
 
 
 
@@ -32,6 +33,7 @@ import { OverviewPipe } from './overview.pipe';
     MenuComponent,
     PosterPipe,
     OverviewPipe,
+    ListadoGeneroComponent,
   ],
   imports: [
     BrowserModule,

@@ -30,4 +30,10 @@ export class PeliculasService {
       `https://api.themoviedb.org/3/discover/movie?api_key=343b1af65aa49d4ebb8e0c3d95e57588&language=es-MX&sort_by=popularity.desc`
     );
   }
+
+  getByGenre(genero: string) {
+    console.log("Se llamo a GetByGenre con el parametro id: ", genero);
+    return this.http.get(
+"https://api.themoviedb.org/3/discover/movie?api_key=343b1af65aa49d4ebb8e0c3d95e57588&with_genres=27&language=es-MX"    );
+  }
 }
