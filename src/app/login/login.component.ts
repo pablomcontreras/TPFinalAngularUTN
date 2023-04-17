@@ -4,24 +4,33 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+  loginForm: FormGroup = new FormGroup({});
 
-  loginForm: FormGroup;
-  constructor(private fb: FormBuilder) {
-    this.loginForm = this.fb.group({
-      nombre: ['', [Validators.required, Validators.minLength(3)]],
-      apellido: [''],
-      username: ['', [Validators.required]],
-      correo: ['', [Validators.required, Validators.email]],
+  constructor(private formBuilder: FormBuilder) {
+    this.loginForm = this.formBuilder.group({
+      email: ['', [Validators.required, Validators.email]],
       clave: ['', [Validators.required]],
     });
   }
-  registrarse() {
-    console.log(this.loginForm.value);
+
+  ngOnInit() {
+
   }
 
-  ngOnInit(): void {}
+  onSubmit() {
+    console.log(this.loginForm.value);
+    alert('Bienvenido!');
   }
+
+  //pongo getters para hacer mas facil el acceso
+  get email() {
+    return this.loginForm.get('email');
+  }
+  get clave() {
+    return this.loginForm.get('clave');
+  }
+}
 

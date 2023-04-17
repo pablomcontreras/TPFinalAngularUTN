@@ -1,8 +1,6 @@
-
-
 <div class="container-fluid mx-auto p-5">
     <div class="row">
-        <div class="col-md-12 mb-5" >
+        <div class="col-md-12 mb-5">
             <h3 class="text-center">
                 Registro
             </h3>
@@ -10,48 +8,49 @@
     </div>
     <div class="row">
         <div class="col-md-8">
-<img src="../../assets/registro.jpg" class="mx-auto d-block">
+            <img src="../../assets/registro.jpg" class="mx-auto d-block">
         </div>
         <div class="col-md-4 mt-5">
-                <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
-                    <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" class="form-control" formControlName="nombre">
-                        <div *ngIf="nombre!.invalid && (nombre!.dirty || nombre!.touched)" class="invalid-feedback">
-                            <div *ngIf="nombre!.hasError('required')">El nombre es obligatorio.</div>
-                            <div *ngIf="nombre!.hasError('minlength')">El nombre debe tener al menos 3 caracteres.</div>
-                        </div>
+            <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" class="form-control" formControlName="nombre">
+                    <div *ngIf="nombre!.invalid && (nombre!.dirty || nombre!.touched)" class="invalid-feedback">
+                        <div *ngIf="nombre!.hasError('required')">El nombre es obligatorio.</div>
+                        <div *ngIf="nombre!.hasError('minlength')">El nombre debe tener al menos 3 caracteres.</div>
                     </div>
-                
-                    <div class="form-group">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" class="form-control" formControlName="apellido">
-                        <div *ngIf="apellido!.invalid && (apellido!.dirty || apellido!.touched)" class="invalid-feedback">
-                            <div *ngIf="apellido!.hasError('required')">El apellido es obligatorio.</div>
-                            <div *ngIf="apellido!.hasError('minlength')">El apellido debe tener al menos 3 caracteres.</div>
-                        </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" class="form-control" formControlName="apellido">
+                    <div *ngIf="apellido!.invalid && (apellido!.dirty || apellido!.touched)" class="invalid-feedback">
+                        <div *ngIf="apellido!.hasError('required')">El apellido es obligatorio.</div>
+                        <div *ngIf="apellido!.hasError('minlength')">El apellido debe tener al menos 3 caracteres.</div>
                     </div>
-                
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" formControlName="email">
-                        <div *ngIf="email!.invalid && (email!.dirty || email!.touched)" class="invalid-feedback">
-                            <div *ngIf="email!.hasError('required')">El email es obligatorio.</div>
-                            <div *ngIf="email!.hasError('email')">El email debe tener un formato válido.</div>
-                        </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" formControlName="email">
+                    <div *ngIf="email!.invalid && (email!.dirty || email!.touched)" class="invalid-feedback">
+                        <div *ngIf="email!.hasError('required')">El email es obligatorio.</div>
+                        <div *ngIf="email!.hasError('email')">El email debe tener un formato válido.</div>
                     </div>
-                
-                    <div class="form-group">
-                        <label for="clave">Contraseña</label>
-                        <input type="password" id="clave" class="form-control" formControlName="clave">
-                        <div *ngIf="clave!.invalid && (clave!.dirty || clave!.touched)" class="invalid-feedback">
-                            <div *ngIf="clave!.hasError('required')">La contraseña es obligatoria.</div>
-                            <div *ngIf="clave!.hasError('minlength')">La contraseña debe tener al menos 6 caracteres.</div>
-                        </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="clave">Contraseña</label>
+                    <input type="password" id="clave" class="form-control" formControlName="clave">
+                    <div *ngIf="clave!.invalid && (clave!.dirty || clave!.touched)" class="invalid-feedback">
+                        <div *ngIf="clave!.hasError('required')">La contraseña es obligatoria.</div>
+                        <div *ngIf="clave!.hasError('minlength')">La contraseña debe tener al menos 6 caracteres.</div>
                     </div>
-                
-                    <button type="submit" class="btn btn-primary mt-2" [disabled]="registroForm.invalid">Registrarse</button>
-                </form>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-2"
+                    [disabled]="registroForm.invalid">Registrarse</button>
+            </form>
         </div>
     </div>
 </div>

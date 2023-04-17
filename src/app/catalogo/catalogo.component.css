@@ -1,0 +1,159 @@
+.aventura{
+    background-color: rebeccapurple;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center
+    ;
+}
+
+.acción{
+    background-color: orange;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center
+    ;
+}
+
+.animación{
+    background-color: blue;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center
+    ;
+}
+
+.comedia{
+    background-color: #16DB93;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.crimen{
+    background-color: gray;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.documental{
+    background-color: #E74C3C;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.drama{
+    background-color: pink;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.familia{
+    background-color: #27AE60;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.fantasía{
+    background-color: #F7DC6F;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.historia{
+    background-color: #2E4057;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.terror{
+    background-color: #581845;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.música{
+    background-color: darkorchid;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.misterio{
+    background-color: darkgrey;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.romance{
+    background-color: plum;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.ciencia{
+    background-color: burlywood;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.película{
+    background-color: darkolivegreen;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.suspense{
+    background-color: darkcyan;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.bélica{
+    background-color: green;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.western{
+    background-color: #E74C3C;
+    opacity: 60%;
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+/* 
+
+#FFC300 (Yellow)
+#FF5733 (Orange)
+#C70039 (Red)
+#900C3F (Dark Red)
+#581845 (Dark Purple)
+#2E4057 (Dark Blue)
+#048BA8 (Blue)
+ (Green)
+#41EAD4 (Turquoise)
+#E8F8F5 (Pale Blue)
+#F7DC6F (Pale Yellow)
+#F0B27A (Pale Orange)
+# (Pale Red)
+#9B59B6 (Pale Purple)
+#3498DB (Pale Blue)
+#1ABC9C (Pale Green)
+#27AE60 (Pale Green)
+#F5B7B1 (Pale Pink)
+#FDEBD0 (Pale Beige) */
