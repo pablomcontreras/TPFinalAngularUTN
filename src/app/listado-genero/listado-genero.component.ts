@@ -10,11 +10,24 @@ import { PeliculasService } from '../peliculas.service';
 export class ListadoGeneroComponent implements OnInit {
   genero: any;
   peliculasDelGenero: any;
-
+  listadoGeneros: any;
+  titulo: any;
   constructor(
     private route: ActivatedRoute,
     private peliculasService: PeliculasService
-  ) {}
+  ) {
+    peliculasService.getGeneros().subscribe({
+      next: (data: any) => {
+        this.listadoGeneros = data.genres;
+        this.titulo = peliculasService.getNameById(this.genero.genero, this.listadoGeneros)
+        console.log("se llama a peliculas service con :", this.genero.genero, this.listadoGeneros)
+        console.log("Titulo tiene:", this.titulo)
+      },
+      error: (e) => {
+        console.log('Error: ', e);
+      },
+    });
+  }
 
   ngOnInit() {
     this.genero = this.route.snapshot.params;

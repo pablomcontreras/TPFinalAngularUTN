@@ -5,8 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
 import { LoginComponent } from './login/login.component';
 import { DetalleComponent } from './detalle/detalle.component';
-import { RegistroComponent } from './registro/registro.component';
 import { ListadoGeneroComponent } from './listado-genero/listado-genero.component';
+import { RegistroComponent } from './registro/registro.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'registro', component: RegistroComponent },
   { path: 'catalogo', component: CatalogoComponent },
   { path: 'detalle/:id', component: DetalleComponent },
-  { path: 'genero/:genero', component: ListadoGeneroComponent},
+  { path: 'genero/:genero', component: ListadoGeneroComponent },
   { path: '**', redirectTo: 'portfolio', pathMatch: 'full' },
 ];
 

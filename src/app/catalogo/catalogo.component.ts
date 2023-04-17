@@ -21,15 +21,6 @@ export class CatalogoComponent {
          console.log('Error: ', e);
        },
      });
-    //PARA LA PAGINA DE DETALLE DE GENERO:
-    // const response = peliculasService.getPopularMovies().subscribe({
-    //   next: (data: any) => {
-    //     this.popular = data.results.slice(0, 10);
-    //     console.log(this.popular);
-    //   },
-    //   error: (e) => {
-    //     console.log('Error: ', e);
-    //   },
-    // });
+
   }
 }
