@@ -38,15 +38,15 @@ export class PeliculasService {
   }
 
   getNameById(id: string, arr: any) {
-    console.log('se llamo a getNameById con esto: ', id, arr);
-    console.log('Lenght del array: ', arr.length);
+    //console.log('se llamo a getNameById con esto: ', id, arr);
+    //console.log('Lenght del array: ', arr.length);
 
     const parsedId = parseInt(id, 10); // Convertimos el id en un número entero para compararlo
 
     for (let i = 0; i < arr.length; i++) {
-      console.log('Comparando id: ', id, 'con el id ', arr[i].id);
+      //console.log('Comparando id: ', id, 'con el id ', arr[i].id);
       if (arr[i].id === parsedId) {
-        console.log('el id ', id, ' coincide para el genero: ', arr[i].name);
+        //console.log('el id ', id, ' coincide para el genero: ', arr[i].name);
         return arr[i].name;
       }
     }

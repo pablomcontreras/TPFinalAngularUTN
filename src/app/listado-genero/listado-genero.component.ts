@@ -20,8 +20,8 @@ export class ListadoGeneroComponent implements OnInit {
       next: (data: any) => {
         this.listadoGeneros = data.genres;
         this.titulo = peliculasService.getNameById(this.genero.genero, this.listadoGeneros)
-        console.log("se llama a peliculas service con :", this.genero.genero, this.listadoGeneros)
-        console.log("Titulo tiene:", this.titulo)
+        //console.log("se llama a peliculas service con :", this.genero.genero, this.listadoGeneros)
+        //console.log("Titulo tiene:", this.titulo)
       },
       error: (e) => {
         console.log('Error: ', e);

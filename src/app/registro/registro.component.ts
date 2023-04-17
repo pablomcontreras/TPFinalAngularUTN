@@ -29,7 +29,7 @@ export class RegistroComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.registroForm.value);
+    //console.log(this.registroForm.value);
     alert('Registro Exitoso!')
   }
 

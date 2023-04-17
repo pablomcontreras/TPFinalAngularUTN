@@ -1,0 +1,8 @@
+.fondo{
+    background-color: #e4e4e4;
+}
+.cover{
+    height: auto;
+    width: 100%;
+    object-fit: fill;
+}

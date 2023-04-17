@@ -13,7 +13,7 @@ export class HomeComponent {
     const response = peliculasService.getFeatured().subscribe({
       next: (data: any) => {
         this.tendencias = data.results.slice(0, 9);
-        console.log(this.tendencias);
+        //console.log(this.tendencias);
       },
       error: (e) => {
         console.log('Error: ', e);

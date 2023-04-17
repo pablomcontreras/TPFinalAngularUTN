@@ -15,7 +15,7 @@ export class CatalogoComponent {
      const response = peliculasService.getGeneros().subscribe({
        next: (data: any) => {
          this.generos = data.genres;
-         console.log(this.generos);
+         //console.log(this.generos);
        },
        error: (e) => {
          console.log('Error: ', e);
