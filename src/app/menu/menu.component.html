@@ -1,5 +1,5 @@
 <header id="topheader">
-    <div class="row" id="cont-header">
+    <div class="row container" id="cont-header">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-12">
@@ -29,30 +29,7 @@
                                     <a class="nav-link" style="cursor:pointer" [routerLink]="'/registro'"
                                         data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Registrarse</a>
                                 </li>
-                                <li *ngIf="isLogin" class="nav-item">
-                                    <a class="nav-link" style="cursor:pointer" (Click)="salir()"
-                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Cerrar
-                                        Sesión</a>
-                                </li>
                             </ul>
-                            <li *ngIf="!isLogin" class="nav-item navbar-nav">
-                                <div id="social-botones" class="mx-2">
-                                    <a class="btn" style="color:white ;" href="https://github.com/pablomcontreras"
-                                        target="_blank">
-                                        <i class="fa-brands fa-github fa-xl" title="Github" data-bs-toggle="collapse"
-                                            data-bs-target=".navbar-collapse.show"></i>
-                                    </a>
-                                    <a class="btn" style="color:white ;"
-                                        href="https://linkedin.com/in/maximiliano-contreras-0ba976239" target="_blank">
-                                        <i class="fa-brands fa-linkedin fa-xl" title="Linkedin"
-                                            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"></i>
-                                    </a>
-                                    <a class="btn" style="color:white ;" routerLink="login" data-bs-toggle="collapse"
-                                        data-bs-target=".navbar-collapse.show">
-                                        <i class="fa-solid fa-right-to-bracket" title="Acceso Editor"></i>
-                                    </a>
-                                </div>
-                            </li>
                         </div>
                     </nav>
                 </div>
