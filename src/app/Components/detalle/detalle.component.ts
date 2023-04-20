@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { PeliculasService } from '../peliculas.service';
+import { PeliculasService } from '../../Services/peliculas.service';
 
 @Component({
   selector: 'app-detalle',

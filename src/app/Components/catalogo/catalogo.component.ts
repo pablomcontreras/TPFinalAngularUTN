@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PeliculasService } from '../peliculas.service';
+import { PeliculasService } from '../../Services/peliculas.service';
 
 @Component({
   selector: 'app-catalogo',
