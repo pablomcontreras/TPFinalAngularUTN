@@ -1,11 +1,11 @@
 <div class="container pb-3">
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col" *ngFor="let genero of generos"  role='button' routerLink="/genero/{{genero.id}}">
-        <div class="card h-100 " role='button' [ngClass]="genero.name">
-            <div class="card-body {{genero.name | lowercase}}">
-                <h5 class="card-title">{{genero.name}}</h5>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let genero of generos" role='button' routerLink="/genero/{{genero.id}}">
+            <div class="card h-100 " role='button' [ngClass]="genero.name">
+                <div class="card-body {{genero.name | lowercase}}">
+                    <h5 class="card-title">{{genero.name}}</h5>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>

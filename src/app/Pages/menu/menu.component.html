@@ -5,9 +5,8 @@
                 <div class="col-md-12">
                     <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top"
                         style="background-color: #5C1114;">
-                        <a routerLink="/">
-                        <img class="rounded" src="/assets/navbarlogo.png" height="60" alt="MaxFlix" />
-                    </a>
+                        <img class="rounded" src="/assets/navbarlogo.png" height="60" alt="MaxFlix" routerLink="/"
+                            style="cursor:pointer" />
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -15,21 +14,17 @@
                         </button>
                         <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-5 mr-auto" id="barranav">
-                                <li class="nav-item">
-                                    <a class="nav-link" style="cursor:pointer" [routerLink]="'/home'"
-                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Inicio </a>
+                                <li class="nav-item nav-link" style="cursor:pointer" routerLink="/"
+                                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Inicio
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" style="cursor:pointer" [routerLink]="'/catalogo'"
-                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Catálogo</a>
+                                <li class="nav-item nav-link" style="cursor:pointer" routerLink="/catalogo"
+                                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Catálogo
                                 </li>
-                                <li *ngIf="!isLogin" class="nav-item">
-                                    <a class="nav-link" style="cursor:pointer" [routerLink]="'/login'"
-                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Ingresar</a>
+                                <li class="nav-item nav-link" style="cursor:pointer" routerLink="/login"
+                                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Ingresar
                                 </li>
-                                <li *ngIf="!isLogin" class="nav-item">
-                                    <a class="nav-link" style="cursor:pointer" [routerLink]="'/registro'"
-                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Registrarse</a>
+                                <li class="nav-item nav-link" style="cursor:pointer" routerLink="/registro"
+                                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Registrarse
                                 </li>
                             </ul>
                         </div>

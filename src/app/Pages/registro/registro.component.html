@@ -8,10 +8,11 @@
     </div>
     <div class="row">
         <div class="col-md-8">
-            <img src="../../assets/registro.jpg" class="mx-auto" >
+            <img src="../../assets/registro.jpg" class="mx-auto">
         </div>
         <div class="col-md-4 mt-5">
             <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+                
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" class="form-control" formControlName="nombre">
@@ -48,7 +49,8 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary mt-2" style="background-color: #5C1114; border-color: #5C1114"
+                <button type="submit" class="btn btn-primary mt-2"
+                    style="background-color: #5C1114; border-color: #5C1114"
                     [disabled]="registroForm.invalid">Registrarse</button>
             </form>
         </div>

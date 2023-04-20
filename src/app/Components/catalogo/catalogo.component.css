@@ -1,140 +1,135 @@
-.aventura{
-    background-color: rebeccapurple;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center
-    ;
+.aventura {
+  background-color: rebeccapurple;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.acción{
-    background-color: orange;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center
-    ;
+.acción {
+  background-color: orange;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.animación{
-    background-color: blue;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center
-    ;
+.animación {
+  background-color: blue;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.comedia{
-    background-color: #16DB93;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.comedia {
+  background-color: #16db93;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.crimen{
-    background-color: gray;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.crimen {
+  background-color: gray;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.documental{
-    background-color: #E74C3C;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.documental {
+  background-color: #e74c3c;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.drama{
-    background-color: pink;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.drama {
+  background-color: pink;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.familia{
-    background-color: #27AE60;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.familia {
+  background-color: #27ae60;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.fantasía{
-    background-color: #F7DC6F;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.fantasía {
+  background-color: #f7dc6f;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.historia{
-    background-color: #2E4057;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.historia {
+  background-color: #2e4057;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.terror{
-    background-color: #581845;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.terror {
+  background-color: #581845;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.música{
-    background-color: darkorchid;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.música {
+  background-color: darkorchid;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.misterio{
-    background-color: darkgrey;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.misterio {
+  background-color: darkgrey;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.romance{
-    background-color: plum;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.romance {
+  background-color: plum;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.ciencia{
-    background-color: burlywood;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.ciencia {
+  background-color: burlywood;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.película{
-    background-color: darkolivegreen;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.película {
+  background-color: darkolivegreen;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.suspense{
-    background-color: darkcyan;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.suspense {
+  background-color: darkcyan;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.bélica{
-    background-color: green;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.bélica {
+  background-color: green;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
 
-.western{
-    background-color: #E74C3C;
-    opacity: 60%;
-    color: aliceblue;
-    text-align: center;
+.western {
+  background-color: #e74c3c;
+  opacity: 60%;
+  color: aliceblue;
+  text-align: center;
 }
-
-
 
 /* 
 

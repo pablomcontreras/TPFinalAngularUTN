@@ -15,16 +15,12 @@ export class LoginComponent implements OnInit {
       clave: ['', [Validators.required]],
     });
   }
-
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   onSubmit() {
     //console.log(this.loginForm.value);
     alert('Bienvenido!');
   }
-
   //pongo getters para hacer mas facil el acceso
   get email() {
     return this.loginForm.get('email');
@@ -33,4 +29,3 @@ export class LoginComponent implements OnInit {
     return this.loginForm.get('clave');
   }
 }
-

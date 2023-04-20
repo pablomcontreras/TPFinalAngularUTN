@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 
-
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',

@@ -10,7 +10,7 @@ export class HomeComponent {
   tendencias: any[] = [];
 
   constructor(private peliculasService: PeliculasService) {
-    const response = peliculasService.getFeatured().subscribe({
+    peliculasService.getFeatured().subscribe({
       next: (data: any) => {
         this.tendencias = data.results.slice(0, 9);
         //console.log(this.tendencias);

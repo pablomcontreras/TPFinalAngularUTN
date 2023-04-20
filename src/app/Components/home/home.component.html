@@ -1,17 +1,16 @@
 <div class="p-4">
-<h1>Bienvenido!</h1>
-<h2>Estas son las tendencias de esta semana</h2>
-<div class="row row-cols-1 row-cols-md-3 g-4" >
-    <div class="col"  *ngFor="let pelicula of tendencias">
-        <div class="card h-100 " role='button' routerLink="/detalle/{{pelicula.id}}">
-            <img src="{{pelicula.poster_path | poster}}" class="h-100"
-                alt="{{pelicula.title}}" />
-            <div class="card-body">
-                <h5 class="card-title">{{pelicula.title}}</h5>
-                <p class="card-text">
-                {{pelicula.overview  | overview}}
+    <h1>Bienvenido!</h1>
+    <h2>Estas son las tendencias de esta semana</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let pelicula of tendencias">
+            <div class="card h-100 " role='button' routerLink="/detalle/{{pelicula.id}}">
+                <img src="{{pelicula.poster_path | poster}}" class="h-100" alt="{{pelicula.title}}" />
+                <div class="card-body">
+                    <h5 class="card-title">{{pelicula.title}}</h5>
+                    <p class="card-text">
+                        {{pelicula.overview | overview}}
+                </div>
             </div>
         </div>
-    </div> 
-</div>
+    </div>
 </div>

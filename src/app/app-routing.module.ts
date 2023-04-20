@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'catalogo', component: CatalogoComponent },
   { path: 'detalle/:id', component: DetalleComponent },
   { path: 'genero/:genero', component: ListadoGeneroComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: '', pathMatch: 'full' }, // Si no hay match de route, vuelve al inicio.
 ];
 
 @NgModule({

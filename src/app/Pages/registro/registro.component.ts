@@ -27,12 +27,11 @@ export class RegistroComponent implements OnInit {
       clave: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
-
   onSubmit() {
     //console.log(this.registroForm.value);
-    alert('Registro Exitoso!')
+    alert('Registro Exitoso!');
   }
-
+//Getters para acceder facil
   get nombre() {
     return this.registroForm.get('nombre');
   }
